@@ -21,6 +21,7 @@
 - (void)viewDidLoad{
     [super viewDidLoad];
     
+    // 状态栏图标颜色
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
     
     HomePageController *homePageVC = [[HomePageController alloc] init];
@@ -44,7 +45,7 @@
     [self setShouldStretchDrawer:NO];
 
     [self setShowsShadow:NO];
-    
+
 }
 
 

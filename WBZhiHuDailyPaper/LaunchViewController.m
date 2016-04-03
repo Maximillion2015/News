@@ -53,7 +53,7 @@ static CGFloat const animationDuration = 3.0;
             
             self.launchImage.image = image;
 
-            self.imageTitle.text = lanunchImage.text;
+            self.imageTitle.text = @"© 张艺峰";
             
             [_imageTitle sizeToFit];
             _imageTitle.centerX = self.view.centerX;

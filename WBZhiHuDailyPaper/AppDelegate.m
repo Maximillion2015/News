@@ -24,7 +24,7 @@
     
     self.window.rootViewController = self.mainViewController;
     [self.window makeKeyAndVisible];
-    
+
     [self.window showLanuchPageAndSetUmeng];
     
     return YES;
