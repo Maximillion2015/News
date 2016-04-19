@@ -88,6 +88,7 @@ HomeCellDelegate>
 }
 
 - (void)updateData{
+    
     [self.tool getThemeNewsWithId:self.theme.id SuccessfulBlock:^(id obj) {
         self.themeNews = obj;
         [self.topView sd_setImageWithURL:[NSURL URLWithString:self.themeNews.image]];

@@ -1,26 +1,39 @@
 PODS:
-  - AFNetworking (2.6.2):
-    - AFNetworking/NSURLConnection (= 2.6.2)
-    - AFNetworking/NSURLSession (= 2.6.2)
-    - AFNetworking/Reachability (= 2.6.2)
-    - AFNetworking/Security (= 2.6.2)
-    - AFNetworking/Serialization (= 2.6.2)
-    - AFNetworking/UIKit (= 2.6.2)
-  - AFNetworking/NSURLConnection (2.6.2):
+  - AFNetworking (2.6.3):
+    - AFNetworking/NSURLConnection (= 2.6.3)
+    - AFNetworking/NSURLSession (= 2.6.3)
+    - AFNetworking/Reachability (= 2.6.3)
+    - AFNetworking/Security (= 2.6.3)
+    - AFNetworking/Serialization (= 2.6.3)
+    - AFNetworking/UIKit (= 2.6.3)
+  - AFNetworking/NSURLConnection (2.6.3):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/NSURLSession (2.6.2):
+  - AFNetworking/NSURLSession (2.6.3):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/Reachability (2.6.2)
-  - AFNetworking/Security (2.6.2)
-  - AFNetworking/Serialization (2.6.2)
-  - AFNetworking/UIKit (2.6.2):
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+  - AFNetworking/UIKit (2.6.3):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
-  - MJExtension (3.0.3)
+  - DKNightVersion (2.2.0):
+    - DKNightVersion/Core (= 2.2.0)
+    - DKNightVersion/CoreAnimation (= 2.2.0)
+    - DKNightVersion/UIKit (= 2.2.0)
+  - DKNightVersion/Core (2.2.0):
+    - DKNightVersion/Core/DeallocBlockExecutor (= 2.2.0)
+    - DKNightVersion/Core/extobjc (= 2.2.0)
+  - DKNightVersion/Core/DeallocBlockExecutor (2.2.0)
+  - DKNightVersion/Core/extobjc (2.2.0)
+  - DKNightVersion/CoreAnimation (2.2.0):
+    - DKNightVersion/Core
+  - DKNightVersion/UIKit (2.2.0):
+    - DKNightVersion/Core
+  - MJExtension (3.0.10)
   - MMDrawerController (0.6.0):
     - MMDrawerController/Core (= 0.6.0)
     - MMDrawerController/MMDrawerBarButtonItem (= 0.6.0)
@@ -33,20 +46,22 @@ PODS:
     - MMDrawerController/Core
   - MMDrawerController/Subclass (0.6.0):
     - MMDrawerController/Core
-  - SDWebImage (3.7.3):
-    - SDWebImage/Core (= 3.7.3)
-  - SDWebImage/Core (3.7.3)
+  - SDWebImage (3.7.5):
+    - SDWebImage/Core (= 3.7.5)
+  - SDWebImage/Core (3.7.5)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
+  - DKNightVersion (~> 2.2.0)
   - MJExtension
   - MMDrawerController
   - SDWebImage (~> 3.7.2)
 
 SPEC CHECKSUMS:
-  AFNetworking: 7f317038a9710cabfa43ec56396b307b45df72ab
-  MJExtension: de557e1c48ef3212590d3203764c8003fae68815
+  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  DKNightVersion: 754e99bafe563ca75a1fbbbda79dae91948c5504
+  MJExtension: d86aacb740c87519d20e3cca55b6fa4be6cc7548
   MMDrawerController: e3a54a5570388463ad3b36975251575b50c4e1a0
-  SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
+  SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
 
 COCOAPODS: 0.39.0

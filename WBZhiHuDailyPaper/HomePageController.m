@@ -55,7 +55,6 @@ HomeCellDelegate>
     [self.view addSubview:self.titleLabel];
     [self.view addSubview:self.leftSideButton];
     [self.view addSubview:self.refreshView];
-    
     [self.tool loadNewStoriesWithCallBack:^(id obj) {
         [self setTableViewWithArray:obj];
     }];
@@ -149,10 +148,10 @@ HomeCellDelegate>
 }
 
 - (void)setUpDataSource{
-    TableViewCellConfigureBlock configureCell = ^(HomeCell *cell, StoryModel * story) {
+    TableViewCellConfigureBlock configureCell = ^(HomeCell *cell, StoryModel *story) {
         cell.storyModel = story;
         cell.delegate = self;
-        [self registerForPreviewingWithDelegate:cell sourceView:cell.contentView];
+//        [self registerForPreviewingWithDelegate:cell sourceView:cell.contentView];
         
     };
     self.newsArrayDataSource = [[ArrayDataSource alloc]initWithItems:self.stories
@@ -162,6 +161,7 @@ HomeCellDelegate>
     [self.tableView registerNib:[UINib nibWithNibName:@"HomeCell"
                                                bundle:nil]
          forCellReuseIdentifier:homeCellIdentifier];
+    
 }
 
 - (void)pushViewDetailViewControllerWithStoryModel:(StoryModel *)storyModel{

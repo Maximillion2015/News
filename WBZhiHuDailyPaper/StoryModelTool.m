@@ -86,7 +86,6 @@
 - (void)calculteNewsIds{
     
     self.newsIds = [self.items valueForKeyPath:@"stories.id"];
-    
     NSMutableArray *arrayM = [NSMutableArray array];
     for (int i = 0; i < self.newsIds.count; i++) {
         NSArray *array = self.newsIds[i];

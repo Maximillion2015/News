@@ -39,6 +39,8 @@ static CGFloat const animationDuration = 3.0;
 #pragma mark - private method
 - (void)updateLanunchImage{
     
+
+    
     [HttpTool get:@"http://news-at.zhihu.com/api/4/start-image/1080*1776" params:nil success:^(id json) {
         LaunchImage *lanunchImage = [LaunchImage mj_objectWithKeyValues:json];
         

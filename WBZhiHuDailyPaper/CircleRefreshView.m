@@ -70,6 +70,7 @@
         return;
     }
     
+    // 松开手后动画开始
     if (offsetY < -60.f && offsetY >= -90.f && !self.scrollView.isDragging){
         
         self.refreshing = YES;

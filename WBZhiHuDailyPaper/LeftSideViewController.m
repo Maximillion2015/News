@@ -18,6 +18,8 @@
 
 #import "LeftTableViewCell.h"
 
+#import <DKNightVersion/DKNightVersion.h>
+
 static NSString * const leftCell = @"leftCell";
 static NSString * const isNight = @"isNight";
 
@@ -50,7 +52,22 @@ LoginControllerDelegate>
     
     
     BOOL night = [[NSUserDefaults standardUserDefaults] boolForKey:isNight];
+    
     self.nightBtn.selected = night;
+    
+    [self.nightBtn addTarget:self action:@selector(nightBtnClick) forControlEvents:UIControlEventTouchUpInside];
+    
+}
+
+- (void)nightBtnClick
+{
+    if(self.nightBtn.selected)
+    {
+        self.view.dk_backgroundColorPicker = DKColorPickerWithKey(BG);
+//        [DKNightVersionManager nightFalling];   
+    }else {
+        self.view.dk_backgroundColorPicker = DKColorPickerWithKey(SEP);
+    }
 }
 
 #pragma mark - UITableView Delegate
